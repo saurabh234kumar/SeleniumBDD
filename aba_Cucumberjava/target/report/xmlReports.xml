@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="8.091" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Check Suadeo login functionality" name="Check login functionality with valid credential - Example #1.1" time="7.766">
+<system-out><![CDATA[
+Given Open suadeo login page................................................passed
+When authentiacation selection..............................................passed
+When enter email qatester...................................................passed
+When enter password &m.XkHUa.4qm7Df.........................................passed
+And Click login button......................................................passed
+Then User should loginn successfuly.........................................passed
+And Suadeo home page should display.........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
