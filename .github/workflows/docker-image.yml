@@ -18,7 +18,7 @@ jobs:
     
       run: |
         echo  "${{secrets.DOCKERPW}}" | docker login -u "saurabh04kumar" --password-stdin
-        docker build -t webmagic1/flaskapp:v1
+        docker buildx build -t webmagic1/flaskapp:v1
         docker push webmagic1/flaskapp:v1
       
 
