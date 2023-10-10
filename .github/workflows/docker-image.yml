@@ -18,7 +18,7 @@ jobs:
       working-directory: aba_Cucumberjava
       run: |
         echo  "${{secrets.DOCKERPW}}" | docker login -u "saurabh04kumar" --password-stdin
-        docker image build -t webmagic1/flaskapp:v1
+        docker build -t webmagic1/flaskapp:v1
         docker push webmagic1/flaskapp:v1
       
 
