@@ -14,6 +14,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
+    - name: Build t& push image
       working-directory: aba_Cucumberjava
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: |
+        echo  "${{secrets.DOCKERPW}}" | docker login -u "saurabh04kumar" --password-stdin
+        docker image build -t webmagic1/flaskapp:v1
+        docker push webmagic1/flaskapp:v1
+      
+
