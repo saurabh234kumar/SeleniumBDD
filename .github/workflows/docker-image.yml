@@ -19,7 +19,7 @@ jobs:
       run: |
         echo  "${{secrets.DOCKERPW}}" | docker login -u "saurabh04kumar" --password-stdin
 
-        docker build -t doronaviguy/helloworld -f aba_Cucumberjava/DockerFile .
+        docker build -t webmagic1:v1 -f aba_Cucumberjava/DockerFile
   
       
 
