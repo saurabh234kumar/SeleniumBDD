@@ -18,7 +18,7 @@ jobs:
     
       run: |
         echo  "${{secrets.DOCKERPW}}" | docker login -u "saurabh04kumar" --password-stdin
-        docker image build -t webmagic1:v1 .
+        docker image build aba_Cucumberjava/Dockerfile -t webmagic1:v1 .
         docker tag webmagic1:v1 saurabh04kumar/automationimage:v8
         docker push webmagic1/flaskapp:v1
       
